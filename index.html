@@ -7,15 +7,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lifestyle Benny</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
 </head>
 
 <body>
-    <header>
-        <div class="kader">
-            <h1>Hallo! Ik ben Benny</h1>
-            <p>Bachelor student Erasmus hogeschool</p>
+    <div class="header">
+        <div class="navigation">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </div>
-    </header>
+    </div>
+
+    <div class="voorstelling">
+        <header>
+            <div class="kader">
+                <h1>Hallo! Ik ben Benny</h1>
+                <p>Bachelor student Erasmus hogeschool</p>
+                <a href="" class="hero-btn">Know more about me!</a>
+            </div>
+        </header>
+    </div>
+    <!---------course------>
+    <div class="benny1">
+        <h1>Mijn hobby's</h1>
+        <p>Wat ik graag doe in mijn vrije tijd</p>
+
+        <div class="row">
+            <div class="benny2">
+                <h3>Voetbal</h3>
+                <p><Var>Al van klein is voetbal mijn passie, ik voetbal al sind mijn 5 jaar en kan niet zonder
+                        leven.</Var></p>
+            </div>
+            <div class="benny2">
+                <h3>Fitnessen</h3>
+                <p>Ik hou van mijn lichaam in goede form te houden. </p>
+            </div>
+            <div class="benny2">
+                <h3>Gamen</h3>
+                <p>in mijn vrije tijd hou ik ook van gamen met mijn vrienden online.</p>
+            </div>
+        </div>
+    </div>
+
+    <!---------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>
+<!---------footer------>
+<div class="footer">
+    <h4>About Me</h4>
+    <p>Vind me overal op social media ;)</p>
+    <div class="icons">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-snapchat"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-github"></i>
+    </div>
+    <p>Gemaakt door Benny Ntoubandi <i class="fa fa-heart"></i>
+    </p>
+</div>
