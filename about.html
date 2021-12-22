@@ -29,36 +29,48 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </div>
-
-        <div class="voorstelling">
-            <header>
-                <div class="kader2">
-                    <h1>About Me</h1>
-                </div>
-            </header>
-        </div>
     </div>
 
-</body>
-
-</html>
-<!---------about us content------>
-<div class="about-us">
+    <div class="voorstelling">
+        <header>
+            <div class="kader3">
+                <h1>About Me</h1>
+            </div>
+        </header>
+    </div>
+    <!---------course------>
     <div class="row">
-        <div class="about-col">
+        <div class="benny1">
             <h1>Wie ben ik?</h1>
-            <p>Hallo, ik ben Benny Ntoubandi. Ik ben een student uit Erasmushogeschool Brussel.Ik ben 19 jaar oud en
-                woon in Affligem. Ik volg als richting
-                Multimedia en Comuniticatie technologie. Ik heb voor deze richting gekozen omdat het me veel aansprak en
-                sinds klein heeft progameren altijd al geïntreseert. In mijn vrije tijd voetbal ik en sport ik graag.
-            </p>
+            <p>Hallo, ik ben Benny Ntoubandi. Ik ben een student uit<br>
+                Erasmushogeschool Brussel.Ik ben 19 jaar oud en<br>
+                woon in Affligem. Ik volg als richting Multimedia en<br>
+                Comuniticatie technologie. Ik heb voor deze richting<br>
+                gekozen omdat het me veel aansprak en<br>
+                sinds klein heeft progameren altijd al geïntreseert.<br>
+                In mijn vrije tijd voetbal ik en sport ik graag.</p>
         </div>
         <div class="about-col">
             <img src="images/Image.jpeg" alt="">
         </div>
     </div>
 
-</div>
+
+    <!---------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
 <!---------footer------>
 <div class="footer">
     <h4>About Me</h4>
